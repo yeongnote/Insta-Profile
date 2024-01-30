@@ -8,7 +8,7 @@ struct FollowInfoView: View {
             Spacer()
             
             VStack {
-                Text("\(userProfile.posts)")
+                Text("\(userProfile.post)")
                     .font(.system(size: 14)) // 폰트 사이즈 조정
                     .foregroundColor(.black) // 색상 조정
                 Text("Posts")

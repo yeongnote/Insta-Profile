@@ -3,7 +3,7 @@ import CoreData
 
 
 struct ContentView: View {
-    let userProfile = UserProfile(id: UUID(), username: "하영호", bio: "Bio goes here", profileImage: "profilePic", posts: 10, followers: 100, following: 200)
+    let userProfile = UserProfile(id: UUID(), username: "하영호", bio: "Bio goes here", profileImage: "profilePic", post: 10, followers: 100, following: 200)
     
     var body: some View {
         NavigationView {
@@ -11,27 +11,23 @@ struct ContentView: View {
                 VStack {
                     ProfileHeaderView(userProfile: userProfile)
                     ButtonView()
+                    Divider()
+                        .frame(height: 2)
+                        .background(Color(red: 0.86, green: 0.86, blue: 0.86))
+                    HStack {
+                        Button(action: {
+                            // Message 버튼 동작
+                        }) {
+                            Image("Grid")
+                                .frame(width: 22.5, height: 22.5)
+                        }
+                        .padding(.leading, 60)
+                        Spacer()
+                    }
+                    
+                    ImageGalleryView(imageName: ["yeong1", "Ellipse 1", "Ellipse 1"])
                 }
                 .padding()
-                VStack {
-                    Image("Divider")
-                    .frame(width: 375, height: 2)
-                    .overlay(
-                    Rectangle()
-                    .stroke(Color(red: 0.86, green: 0.86, blue: 0.86), lineWidth: 0.5)
-
-                    )
-                }
-                
-                Button(action: {
-                    // Message 버튼 동작
-                }) {
-                    Image("Grid")
-                        .frame(width: 30, height: 30)
-                }
-                .frame(alignment: .leading)
-                
-                ImageGalleryView(imageName: ["image1", "image2", "image3"])
             }
             .navigationBarTitle(Text(userProfile.username), displayMode: .inline)
             .navigationBarItems(trailing: Button(action: {
@@ -63,3 +59,6 @@ struct ContentView: View {
 }
 
 
+#Preview {
+    ContentView()
+}
