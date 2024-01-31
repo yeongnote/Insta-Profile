@@ -6,15 +6,20 @@ struct ImageGalleryView: View {
     var imageName: [String]
     
     var body: some View {
-        LazyVGrid(columns: columns, spacing: 10) {
-            ForEach(imageName, id: \.self) { imageName in
-                Image(imageName)
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 100, height: 100)
-                    .clipped()
+        ScrollView(.vertical, showsIndicators: false) {
+            LazyVGrid(columns: columns, spacing: 2) {
+                ForEach(imageName, id: \.self) { imageName in
+                    Image(imageName)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 124, height: 124)
+                        .clipped()
+                }
             }
+            //.padding(.horizontal)
         }
-        .padding(.horizontal)
     }
 }
+
+
+

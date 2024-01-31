@@ -25,9 +25,9 @@ struct ContentView: View {
                         Spacer()
                     }
                     
-                    ImageGalleryView(imageName: ["yeong1", "Ellipse 1", "Ellipse 1"])
+                    ImageGalleryView(imageName: ["yeong1", "yeong2", "Ellipse 1", "a-1", "a-2", "a-3", "a-4", "a-5", "a-6", "a-7", "a-8"])
                 }
-                .padding()
+                //.padding()
             }
             .navigationBarTitle(Text(userProfile.username), displayMode: .inline)
             .navigationBarItems(trailing: Button(action: {
@@ -39,17 +39,18 @@ struct ContentView: View {
             
             .toolbar {
                 ToolbarItem(placement: .bottomBar) {
-                    HStack {
-                        Image(systemName: "house")
-                        Spacer()
-                        Image(systemName: "magnifyingglass")
-                        Spacer()
-                        Image(systemName: "plus.app")
-                        Spacer()
-                        Image(systemName: "heart")
-                        Spacer()
-                        Image(systemName: "person.crop.circle")
-                        Spacer()
+                    HStack(alignment: .center, spacing: 100) {
+                        Button(action: {
+                            
+                        }) {
+                            Image("Profile - Fill")
+                        }
+                        
+                        Button(action: {
+                            
+                        }) {
+                            Image(systemName: "plus.app")
+                        }
                     }
                     .padding(.horizontal)
                 }
@@ -57,7 +58,6 @@ struct ContentView: View {
         }
     }
 }
-
 
 #Preview {
     ContentView()

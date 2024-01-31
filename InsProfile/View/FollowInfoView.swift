@@ -9,33 +9,34 @@ struct FollowInfoView: View {
             
             VStack {
                 Text("\(userProfile.post)")
-                    .font(.system(size: 14)) // 폰트 사이즈 조정
-                    .foregroundColor(.black) // 색상 조정
-                Text("Posts")
-                    .font(.system(size: 12)) // 폰트 사이즈 조정
-                    .foregroundColor(.gray) // 색상 조정
+                    .font(Font.custom("Open Sans", size: 16.50).weight(.bold))
+                    .foregroundColor(.black)
+                    
+                Text("Post")
+                    .font(Font.custom("Open Sans", size: 14))
+                    .foregroundColor(.black)
             }
             
             Spacer()
             
             VStack {
                 Text("\(userProfile.followers)")
-                    .font(.system(size: 14)) // 폰트 사이즈 조정
-                    .foregroundColor(.black) // 색상 조정
-                Text("Followers")
-                    .font(.system(size: 12)) // 폰트 사이즈 조정
-                    .foregroundColor(.gray) // 색상 조정
+                    .font(Font.custom("Open Sans", size: 16.50).weight(.bold))
+                    .foregroundColor(.black)
+                Text("Follower")
+                    .font(Font.custom("Open Sans", size: 14))
+                    .foregroundColor(.black)
             }
             
             Spacer()
             
             VStack {
                 Text("\(userProfile.following)")
-                    .font(.system(size: 14)) // 폰트 사이즈 조정
-                    .foregroundColor(.black) // 색상 조정
+                    .font(Font.custom("Open Sans", size: 16.50).weight(.bold))
+                    .foregroundColor(.black)
                 Text("Following")
-                    .font(.system(size: 12)) // 폰트 사이즈 조정
-                    .foregroundColor(.gray) // 색상 조정
+                    .font(Font.custom("Open Sans", size: 14))
+                    .foregroundColor(.black)
             }
             
             Spacer()
