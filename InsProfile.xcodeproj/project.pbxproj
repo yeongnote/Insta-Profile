@@ -22,6 +22,7 @@
 		4672873B2B68CC6F0056A586 /* FollowInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4672873A2B68CC6F0056A586 /* FollowInfoViewModel.swift */; };
 		4672873D2B68CC820056A586 /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4672873C2B68CC820056A586 /* GalleryViewModel.swift */; };
 		4672873F2B68CD490056A586 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4672873E2B68CD490056A586 /* ContentView.swift */; };
+		46CEA0262B6AB45800524B9F /* ProfileEditModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CEA0252B6AB45800524B9F /* ProfileEditModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		4672873A2B68CC6F0056A586 /* FollowInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowInfoViewModel.swift; sourceTree = "<group>"; };
 		4672873C2B68CC820056A586 /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
 		4672873E2B68CD490056A586 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		46CEA0252B6AB45800524B9F /* ProfileEditModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				467287342B68CC330056A586 /* ButtonView.swift */,
 				467287362B68CC490056A586 /* ImageGalleryView.swift */,
 				4672873E2B68CD490056A586 /* ContentView.swift */,
+				46CEA0252B6AB45800524B9F /* ProfileEditModalView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				467287332B68CC090056A586 /* FollowInfoView.swift in Sources */,
 				4672872D2B68CBAA0056A586 /* UserProfile.swift in Sources */,
 				4672872F2B68CBB60056A586 /* Post.swift in Sources */,
+				46CEA0262B6AB45800524B9F /* ProfileEditModalView.swift in Sources */,
 				467287372B68CC490056A586 /* ImageGalleryView.swift in Sources */,
 				467287312B68CBD30056A586 /* ProfileHeaderView.swift in Sources */,
 				4672873B2B68CC6F0056A586 /* FollowInfoViewModel.swift in Sources */,

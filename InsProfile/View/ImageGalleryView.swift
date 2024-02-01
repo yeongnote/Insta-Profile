@@ -16,7 +16,6 @@ struct ImageGalleryView: View {
                         .clipped()
                 }
             }
-            //.padding(.horizontal)
         }
     }
 }
