@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		464027462B6B7B2500A78686 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464027452B6B7B2500A78686 /* ImagePicker.swift */; };
 		467287172B68BC1A0056A586 /* InsProfileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467287162B68BC1A0056A586 /* InsProfileApp.swift */; };
 		4672871B2B68BC1B0056A586 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4672871A2B68BC1B0056A586 /* Assets.xcassets */; };
 		4672871E2B68BC1B0056A586 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4672871D2B68BC1B0056A586 /* Preview Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		464027452B6B7B2500A78686 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		467287132B68BC1A0056A586 /* InsProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InsProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		467287162B68BC1A0056A586 /* InsProfileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsProfileApp.swift; sourceTree = "<group>"; };
 		4672871A2B68BC1B0056A586 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				467287362B68CC490056A586 /* ImageGalleryView.swift */,
 				4672873E2B68CD490056A586 /* ContentView.swift */,
 				46CEA0252B6AB45800524B9F /* ProfileEditModalView.swift */,
+				464027452B6B7B2500A78686 /* ImagePicker.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				467287392B68CC5F0056A586 /* ProfileViewModel.swift in Sources */,
 				467287232B68BC1B0056A586 /* InsProfile.xcdatamodeld in Sources */,
 				4672873F2B68CD490056A586 /* ContentView.swift in Sources */,
+				464027462B6B7B2500A78686 /* ImagePicker.swift in Sources */,
 				467287172B68BC1A0056A586 /* InsProfileApp.swift in Sources */,
 				467287352B68CC330056A586 /* ButtonView.swift in Sources */,
 			);

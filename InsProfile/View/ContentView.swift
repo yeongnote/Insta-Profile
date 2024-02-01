@@ -4,7 +4,7 @@ import CoreData
 
 struct ContentView: View {
     @State private var showingProfileModel = false
-    @State var userProfile = UserProfile(id: UUID(), title: "Profile", username: "하영호", bio: "iOS Developer 🍎", profileImage: "profilePic", post: 10, followers: 100, following: 200)
+    @State var userProfile = UserProfile(id: UUID(), title: "Profile", username: "하영호", bio: "iOS Developer 🍎", profileImage: "a-4", post: 10, followers: 100, following: 200)
     
     var body: some View {
         NavigationView {

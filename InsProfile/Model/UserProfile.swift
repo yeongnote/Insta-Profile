@@ -1,4 +1,4 @@
-import Foundation
+import SwiftUI
 
 struct UserProfile: Identifiable, Codable {
     var id: UUID

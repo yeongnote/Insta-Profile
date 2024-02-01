@@ -6,7 +6,7 @@ struct ProfileHeaderView: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Image("yeong1") // 이미지 이름을 바인딩
+                Image(userProfile.profileImage) // 이미지 이름을 바인딩
                     .resizable()
                     .scaledToFill()
                     .frame(width: 88, height: 88)
