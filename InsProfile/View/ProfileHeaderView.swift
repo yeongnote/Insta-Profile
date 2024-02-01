@@ -19,10 +19,10 @@ struct ProfileHeaderView: View {
                 Text(userProfile.username) // 사용자 이름 바인딩
                     .font(Font.custom("Open Sans", size: 14).weight(.bold))
                     .foregroundColor(Color(red: 0.15, green: 0.15, blue: 0.15))
-                Text("iOS Developer 🍎") // 직업 타이틀은 하드코딩 대신 변수로 바인딩 가능
+                Text(userProfile.bio) // 직업 타이틀은 하드코딩 대신 변수로 바인딩 가능
                     .font(Font.custom("Open Sans", size: 14))
                     .foregroundColor(Color(red: 0.15, green: 0.15, blue: 0.15))
-                Text("github.com/yeongnote")
+                Text("github.com/yeongnote")// 깃 허브 주소
                 .font(Font.custom("Open Sans", size: 14))
                 .foregroundColor(Color(red: 0.06, green: 0.27, blue: 0.49))
                 Spacer()

@@ -3,7 +3,8 @@ import CoreData
 
 
 struct ContentView: View {
-    let userProfile = UserProfile(id: UUID(), username: "하영호", bio: "Bio goes here", profileImage: "profilePic", post: 10, followers: 100, following: 200)
+    @State private var showingProfileModel = false
+    @State var userProfile = UserProfile(id: UUID(), title: "Profile", username: "하영호", bio: "iOS Developer 🍎", profileImage: "profilePic", post: 10, followers: 100, following: 200)
     
     var body: some View {
         NavigationView {
@@ -29,7 +30,7 @@ struct ContentView: View {
                 }
                 //.padding()
             }
-            .navigationBarTitle(Text(userProfile.username), displayMode: .inline)
+            .navigationBarTitle(Text(userProfile.title), displayMode: .inline)
             .navigationBarItems(trailing: Button(action: {
                 // 설정 액션
             }) {
@@ -41,11 +42,13 @@ struct ContentView: View {
                 ToolbarItem(placement: .bottomBar) {
                     HStack(alignment: .center, spacing: 100) {
                         Button(action: {
-                            
+                            showingProfileModel = true
                         }) {
                             Image("Profile - Fill")
                         }
-                        
+                        .sheet(isPresented: $showingProfileModel) {
+                            ProfileEditModaView(userProfile: $userProfile)
+                        }
                         Button(action: {
                             
                         }) {
